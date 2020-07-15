@@ -5,12 +5,12 @@ var geradorDePdf = require('../lib/geradorDePdf');
 var fs = require('fs');
 
 const emitente =  {
-  Nome: 'Acme Indústria de Testes Unitários S/A',
+  Nome: 'Empresa de Testes LTDA',
   Logotipo: '',
   RegistroNacional: '14.625.996/0001-35',
   InscricaoEstadual: '03.707.130-0',
-  Telefone: '(61) 3322-4455',
-  Email: 'contato@acme.ind.br',
+  Telefone: '(31) 3322-4455',
+  Email: 'contato@empresa.com.br',
   Endereco: {
           Logradouro: 'Rua dos Testes',
           Numero: '42',
@@ -147,7 +147,7 @@ const danfe = {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.status(200).json({sucess: 'ok'});
 });
 
 router.get('/danfe', async function(req, res, next) {
